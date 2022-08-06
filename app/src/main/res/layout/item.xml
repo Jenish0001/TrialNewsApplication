@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISHAL"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title_name"
+            android:layout_marginTop="10dp"
+            android:text="MISHAL"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/txt_title"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/img_newscv"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@id/txt_title"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_news"
+            android:layout_marginTop="10dp"
+            android:text="MISHAL"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_subtitle"
+            android:layout_marginTop="10dp"
+            android:background="#989696" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.Home_Fragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#3F51B5">
+
+            <ImageView
+                android:id="@+id/categary_Img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:padding="1dp"
+                android:src="@drawable/categories"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/serch_Img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@id/categary_Img"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_baseline_search_24"
+                app:tint="@color/white"
+
+                />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/categary_Img"
+                android:text="NEWS "
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv1"
+            app:tabSelectedTextColor="@color/white"
+            android:background="#3F51B5"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/dualblack"
+            app:tabIndicatorColor="@color/white"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_view" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
