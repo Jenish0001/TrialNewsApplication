@@ -1,14 +1,14 @@
-package com.example.trialnewsapplication
+package com.example.trialnewsapplication.activity
 
 import  android.os.Bundle
 import android.os.Handler
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.fragment.Home_Fragment
 import com.example.trialnewsapplication.fragment.Second_Fragment
 import com.example.trialnewsapplication.fragment.ThirdFragment
-import com.example.trialnewsapplication.tabFragmant.Science_Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

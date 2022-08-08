@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trialnewsapplication.Adpter.My_Adpter_Google_Api
-import com.example.trialnewsapplication.MainActivity
+import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.view.*
 import retrofit2.Call
@@ -38,7 +38,7 @@ class Second_Fragment(val mainActivity: MainActivity) : Fragment() {
 
     fun google_getNews() {
         var apiInterface = ApiClient.getretrofit().create(ApiInterface::class.java)
-        apiInterface.googlegetretrofit("bitcoin", "9e41272f5ec1439c9a0692b57ca606ba")
+        apiInterface.googlegetretrofit("science", "9e41272f5ec1439c9a0692b57ca606ba")
 
             .enqueue(object : Callback<GoogleNews> {
                 //            Callback<GoogleNewsApi>

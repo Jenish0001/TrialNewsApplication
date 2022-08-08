@@ -1,7 +1,6 @@
 package com.example.trialnewsapplication.fragment
 
 import android.app.Dialog
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -15,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.example.trialnewsapplication.Adpter.My_Categery_Adpter
 import com.example.trialnewsapplication.Adpter.TabView_Adpter
-import com.example.trialnewsapplication.MainActivity
+import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.view.ArticlesItem
 import com.google.android.material.tabs.TabLayout
@@ -98,6 +97,7 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
 
     )
 
+
     lateinit var rvview: RecyclerView
     lateinit var ok_btn: Button
 
@@ -159,7 +159,7 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
         tab_view.addTab(tab_view.newTab().setText("Science"))
         tab_view.addTab(tab_view.newTab().setText("sport"))
         tab_view.addTab(tab_view.newTab().setText("technology"))
-//        tab_view.addTab(tab_view.newTab().setText("science"))
+        tab_view.addTab(tab_view.newTab().setText("health"))
 //        tab_view.addTab(tab_view.newTab().setText("technology"))
 //        tab_view.addTab(tab_view.newTab().setText("Bitcoin"))
 

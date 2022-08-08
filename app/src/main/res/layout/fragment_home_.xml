@@ -59,7 +59,7 @@
             app:tabSelectedTextColor="@color/white"
             android:background="#3F51B5"
             app:tabMode="scrollable"
-            app:tabTextColor="@color/dualblack"
+            app:tabTextColor="#B4B5B6"
             app:tabIndicatorColor="@color/white"
             />
 
@@ -67,7 +67,9 @@
             android:id="@+id/pager_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tab_view" />
+            android:layout_below="@id/tab_view"
+
+            />
 
     </RelativeLayout>
 

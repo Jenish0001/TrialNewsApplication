@@ -17,6 +17,7 @@ import com.example.trialnewsapplication.view.ArticlesItem
 class My_Adpter(val context: Context?, val list: List<ArticlesItem?>) :
     RecyclerView.Adapter<My_Adpter.ViewData>() {
     class ViewData(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         var img_news = itemView.findViewById<CardView>(R.id.img_news)
         var img_newscv = itemView.findViewById<ImageView>(R.id.img_newscv)
         var txt_title = itemView.findViewById<TextView>(R.id.txt_title)

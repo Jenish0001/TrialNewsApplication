@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dualblack">#262A35</color>
     <color name="gray">#191A1F</color>
+    <color name="coustomGreen">#00B786</color>
+    <color name="coustomwhite">#B7B7B7</color>
+
+
 </resources>

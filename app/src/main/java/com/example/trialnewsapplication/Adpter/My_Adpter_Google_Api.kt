@@ -1,6 +1,5 @@
 package com.example.trialnewsapplication.Adpter
 
-import android.media.tv.TvView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.trialnewsapplication.MainActivity
+import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.view.ArticlesItem
 

@@ -1,8 +1,6 @@
 package com.example.trialnewsapplication.tabFragmant
 
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapplication.util.StsticFile.Companion.country
 import com.example.trialnewsapplication.Adpter.My_Adpter
-import com.example.trialnewsapplication.MainActivity
+import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.view.ApiClient
 import com.example.trialnewsapplication.view.ApiInterface

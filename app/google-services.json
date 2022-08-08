@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "758743756152",
+    "project_id": "trialnewsapplication",
+    "storage_bucket": "trialnewsapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758743756152:android:2b173016af477fffc7ac8d",
+        "android_client_info": {
+          "package_name": "com.example.trialnewsapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758743756152-jn0mohgavckek9lvi03dj93q7o0o6oj7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trialnewsapplication",
+            "certificate_hash": "ae0803c4fc16ab58bdfaf652e84c167d590fda8f"
+          }
+        },
+        {
+          "client_id": "758743756152-euf2hkira9620g5ma0ktrcjdig7rkosd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM5pyQ6od21CfKxO1nPEs5rqO0L1xND9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758743756152-euf2hkira9620g5ma0ktrcjdig7rkosd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

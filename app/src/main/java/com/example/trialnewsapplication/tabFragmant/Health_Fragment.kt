@@ -19,7 +19,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class sport_Fragment(val homeFragment: MainActivity) : Fragment() {
+class Health_Fragment(val homeFragment: MainActivity) : Fragment() {
 
     lateinit var RvView: RecyclerView
     var list = listOf<ArticlesItem?>()
@@ -34,7 +34,7 @@ class sport_Fragment(val homeFragment: MainActivity) : Fragment() {
 
         RvView = view!!.findViewById<RecyclerView>(R.id.RvView)
 
-        getNews(country, "sport")
+        getNews(country, "health")
         rvSetUp()
         return view
 
@@ -67,6 +67,7 @@ class sport_Fragment(val homeFragment: MainActivity) : Fragment() {
         RvView.adapter = myAdpter
         RvView.layoutManager = lm
     }
+
 //    override fun onStart() {
 //
 //        Handler().postDelayed(Runnable {
@@ -76,7 +77,7 @@ class sport_Fragment(val homeFragment: MainActivity) : Fragment() {
 //    }
 
 //    override fun onResume() {
-//        Handler().postDelayed(Runnable {
+//    Handler().postDelayed(Runnable {
 //            rvSetUp()
 //        }, 5000)
 //        super.onResume()

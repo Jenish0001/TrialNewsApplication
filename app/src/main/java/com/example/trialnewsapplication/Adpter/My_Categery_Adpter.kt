@@ -7,12 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.cardview.widget.CardView
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapplication.util.StsticFile
-import com.example.trialnewsapplication.MainActivity
+import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
-import com.example.trialnewsapplication.fragment.Home_Fragment
 
 
 var list = arrayListOf<Int>(
@@ -52,7 +50,7 @@ var list1 = arrayListOf<Int>(
 
 class My_Categery_Adpter(
     //    val categery: Array<String>,
-   val  mainActivity: MainActivity,
+    val  mainActivity: MainActivity,
     var contryname: Array<String>,
 ) : RecyclerView.Adapter<My_Categery_Adpter.ViewData>() {
     class ViewData(itemView: View) : RecyclerView.ViewHolder(itemView) {

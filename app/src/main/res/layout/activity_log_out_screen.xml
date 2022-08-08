@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logscreen.LogOutScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sarif"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enteremail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Email"
+            android:padding="10dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5"
+            app:startIconDrawable="@drawable/email"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+
+                android:textColor="@color/black"
+                android:textCursorDrawable="?attr/colorControlActivated"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enteremail"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Password"
+            android:padding="10dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5"
+            app:startIconDrawable="@drawable/lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordRegister"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="?attr/colorControlActivated"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enterpassword"
+            android:layout_marginTop="10dp"
+            android:hint="Confiem Password"
+            android:padding="10dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5"
+            app:startIconDrawable="@drawable/lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmRegister"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="?attr/colorControlActivated"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterMoblie"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmPassword"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Moblie"
+            android:padding="10dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5"
+            app:startIconDrawable="@drawable/mobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moblieRegister"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="?attr/colorControlActivated"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sarif"
+            android:layout_below="@id/enterMoblie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3F51B5"
+            android:text="sumbit" />
+
+        <TextView
+            android:id="@+id/login_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_Btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sarif"
+            android:text="log in"
+            android:textColor="@color/purple_700"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

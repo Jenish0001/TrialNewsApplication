@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,10 +23,11 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        app:itemIconSize="25dp"
         android:background="#3F51B5"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu"
-        android:foregroundTint="@color/teal_200"
+
         />
 
 </RelativeLayout>
