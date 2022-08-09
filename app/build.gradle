@@ -61,5 +61,13 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-auth-ktx'
 
+//     google code depan
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+
+// face book dep
+    implementation 'com.facebook.android:facebook-login:latest.release'
+
+
 }
 apply plugin: 'com.google.gms.google-services'

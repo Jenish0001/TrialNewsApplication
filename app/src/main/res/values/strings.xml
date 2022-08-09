@@ -2,5 +2,11 @@
     <string name="app_name">TrialNewsApplication</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client">758743756152-euf2hkira9620g5ma0ktrcjdig7rkosd.apps.googleusercontent.com</string>
+
+<!--    face book  ======-->
+    <string name="facebook_app_id">465804588416606</string>
+    <string name="fb_login_protocol_scheme">fb465804588416606</string>
+    <string name="facebook_client_token">771aqou6tSfZEKh4Qz2RSjpTGBLVoeweMn7</string>
 
 </resources>

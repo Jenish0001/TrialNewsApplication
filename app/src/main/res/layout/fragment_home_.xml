@@ -63,8 +63,10 @@
             app:tabIndicatorColor="@color/white"
             />
 
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager_view"
+            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tab_view"

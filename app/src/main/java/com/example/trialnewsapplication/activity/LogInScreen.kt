@@ -19,7 +19,6 @@ class LogInScreen : AppCompatActivity() {
         blinding = ActivityLogInScreenBinding.inflate(layoutInflater)
         setContentView(blinding.root)
 
-
         signin()
 
     }
@@ -34,13 +33,6 @@ class LogInScreen : AppCompatActivity() {
                 blinding.passwordRegister.text.toString()
             )
         }
-
-        blinding.signInBtn.setOnClickListener {
-
-            var i= Intent(this,MainActivity::class.java)
-            startActivity(i)
-
-        }
         blinding.signUpTxt.setOnClickListener {
 
             var i=Intent(this,LogOutScreen::class.java)
@@ -51,17 +43,22 @@ class LogInScreen : AppCompatActivity() {
     }
 
     //    normal sign in
+
     private fun normalsign(email: String, password: String) {
 
         var firebaseAuth= FirebaseAuth.getInstance()
-
-        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnSuccessListener { res ->
+        firebaseAuth.signInWithEmailAndPassword(email, password).addOnSuccessListener {
+                res ->
             Toast.makeText(this, "sucees email", Toast.LENGTH_SHORT).show()
 
+            var i=Intent(this,MainActivity::class.java)
+            startActivity(i)
 
+            finish()
         }
             .addOnFailureListener { error ->
                 Log.e("TAG", "normalsign: ${error.message}")
+                Toast.makeText(this, "enter correct password", Toast.LENGTH_SHORT).show()
             }
 
     }

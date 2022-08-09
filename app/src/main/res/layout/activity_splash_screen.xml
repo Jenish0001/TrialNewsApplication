@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".activity.splash_Screen">
 
-
+<ImageView
+    android:id="@+id/imgImg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_launcher_foreground"
+    android:background="@color/black"
+    />
 
 </RelativeLayout>

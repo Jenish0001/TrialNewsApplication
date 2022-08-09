@@ -67,7 +67,6 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordRegister"
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:cursorVisible="true"
@@ -93,7 +92,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confirmRegister"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
                 android:cursorVisible="true"
                 android:textColor="@color/black"
@@ -111,13 +109,13 @@
             android:layout_marginTop="10dp"
             android:hint="Enter Moblie"
             android:padding="10dp"
+            android:visibility="gone"
             app:boxStrokeColor="#3F51B5"
             app:hintTextColor="#3F51B5"
             app:startIconDrawable="@drawable/mobile">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/moblieRegister"
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:cursorVisible="true"
@@ -127,16 +125,73 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <RelativeLayout
+            android:id="@+id/rv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/googleCvImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                android:padding="10dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/google"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@id/googleCvImg"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/facebook"
+
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            />
         <Button
             android:id="@+id/submit_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sarif"
             android:layout_below="@id/enterMoblie"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:backgroundTint="#3F51B5"
+            android:fontFamily="@font/sarif"
             android:text="sumbit" />
+
 
         <TextView
             android:id="@+id/login_txt"

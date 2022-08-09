@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val firstFragment = Home_Fragment(this)
         val secondFragment = Second_Fragment(this)
-        val thirdFragment = ThirdFragment()
+        val thirdFragment = ThirdFragment(this)
 
         setCurrentFragment(firstFragment)
 
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.person -> setCurrentFragment(firstFragment)
                 R.id.home -> setCurrentFragment(secondFragment)
                 R.id.settings -> setCurrentFragment(thirdFragment)
+
             }
             true
         }
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 when (it.itemId) {
                     R.id.person -> setCurrentFragment(Home_Fragment(this))
                     R.id.home -> setCurrentFragment(Second_Fragment(this))
-                    R.id.settings -> setCurrentFragment(ThirdFragment())
+                    R.id.settings -> setCurrentFragment(ThirdFragment(this))
                 }
                 true
 
