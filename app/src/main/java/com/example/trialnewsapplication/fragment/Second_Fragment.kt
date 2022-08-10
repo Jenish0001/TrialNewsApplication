@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trialnewsapplication.Adpter.My_Adpter_Google_Api
@@ -31,7 +32,6 @@ class Second_Fragment(val mainActivity: MainActivity) : Fragment() {
 
         google_getNews()
 
-
         return view
 
     }
@@ -41,7 +41,8 @@ class Second_Fragment(val mainActivity: MainActivity) : Fragment() {
         apiInterface.googlegetretrofit("science", "9e41272f5ec1439c9a0692b57ca606ba")
 
             .enqueue(object : Callback<GoogleNews> {
-                //            Callback<GoogleNewsApi>
+
+                //            Callback<GoogleNewsApi ======
                 override fun onResponse(call: Call<GoogleNews>, response: Response<GoogleNews>) {
                     var newsModel = response.body()
                     list1 = newsModel?.articles!!

@@ -10,7 +10,12 @@
     <color name="dualblack">#262A35</color>
     <color name="gray">#191A1F</color>
     <color name="coustomGreen">#00B786</color>
-    <color name="coustomwhite">#B7B7B7</color>
+
+<!--     custom color ==================-->
+    <color name="webBlack">#2C3333</color>
+    <color name="webblue">#395B64</color>
+    <color name="webdark">#A5C9CA</color>
+    <color name="webdarkblue">#E7F6F2</color>
 
 
 </resources>

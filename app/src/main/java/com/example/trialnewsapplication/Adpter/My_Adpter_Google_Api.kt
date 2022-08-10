@@ -1,21 +1,27 @@
 package com.example.trialnewsapplication.Adpter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.trialnewsapplication.activity.MainActivity
 import com.example.trialnewsapplication.R
+import com.example.trialnewsapplication.activity.Show_Activity
+import com.example.trialnewsapplication.fragment.Home_Fragment
 import com.example.trialnewsapplication.view.ArticlesItem
 
-class My_Adpter_Google_Api(val mainActivity: MainActivity, val list: List<ArticlesItem?>) :
+class My_Adpter_Google_Api(val my_activity: MainActivity, val list: List<ArticlesItem?>) :
     RecyclerView.Adapter<My_Adpter_Google_Api.viewData>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewData {
-        var view = LayoutInflater.from(mainActivity).inflate(R.layout.item_google, parent, false)
+        var view = LayoutInflater.from(my_activity).inflate(R.layout.item_google, parent, false)
 
         return My_Adpter_Google_Api.viewData(view)
     }
@@ -29,8 +35,32 @@ class My_Adpter_Google_Api(val mainActivity: MainActivity, val list: List<Articl
 //        holder.txt_title_name.text = list[position]?.source!!.name
 
         holder.text_Title.text = list[position]?.title
-        Glide.with(mainActivity!!).load(img).centerCrop().into(holder.image_view)
+        Glide.with(my_activity!!).load(img).centerCrop().into(holder.image_view)
         holder.text_sub.text = list[position]?.description
+
+        holder.rv1_view.setOnClickListener {
+
+            Toast.makeText(my_activity, "${list[position]?.title}", Toast.LENGTH_SHORT).show()
+
+            var title=list[position]?.title
+            var description=list[position]?.description
+            var name=list[position]?.source?.name
+            var img1=list[position]?.urlToImage
+            var author=list[position]?.author
+           var contect  =list[position]?.content
+
+            var i = Intent(my_activity,Show_Activity::class.java)
+            i.putExtra("title",title)
+            i.putExtra("des", description)
+            i.putExtra("name", name)
+            i.putExtra("img",img1)
+            i.putExtra("author",author)
+            i.putExtra("contect",contect)
+
+
+                my_activity.startActivity(i)
+
+        }
     }
 
     override fun getItemCount(): Int {
@@ -42,6 +72,7 @@ class My_Adpter_Google_Api(val mainActivity: MainActivity, val list: List<Articl
         var text_sub = itemView.findViewById<TextView>(R.id.text_sub)
         var text_Title = itemView.findViewById<TextView>(R.id.text_Title)
         var image_view = itemView.findViewById<ImageView>(R.id.image_view)
+        var rv1_view = itemView.findViewById<RelativeLayout>(R.id.rv1_view)
 
 
     }

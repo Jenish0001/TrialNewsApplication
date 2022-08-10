@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.WindowManager
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import com.example.trialnewsapplication.R
 import com.google.firebase.auth.FirebaseAuth
 
@@ -15,6 +18,16 @@ class splash_Screen : AppCompatActivity() {
 
         var firebaseAuth = FirebaseAuth.getInstance()
         var user = firebaseAuth.currentUser
+
+        var imgImg=findViewById<ImageView>(R.id.imgImg)
+
+        val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.animation_item)
+        imgImg.startAnimation(slideAnimation)
+
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         Handler().postDelayed({
             if (user != null) {
@@ -28,7 +41,7 @@ class splash_Screen : AppCompatActivity() {
             }
 
             finish()
-        }, 5000)
+        }, 1500)
 
     }
 

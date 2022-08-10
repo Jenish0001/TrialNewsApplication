@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.fragment.Home_Fragment
 import com.example.trialnewsapplication.view.ArticlesItem
+import io.supercharge.shimmerlayout.ShimmerLayout
 
 class My_Adpter(val context: Context?, val list: List<ArticlesItem?>) :
     RecyclerView.Adapter<My_Adpter.ViewData>() {
@@ -23,6 +24,7 @@ class My_Adpter(val context: Context?, val list: List<ArticlesItem?>) :
         var txt_title = itemView.findViewById<TextView>(R.id.txt_title)
         var txt_title_name = itemView.findViewById<TextView>(R.id.txt_title_name)
         var txt_subtitle = itemView.findViewById<TextView>(R.id.txt_subtitle)
+//        val layout: ShimmerLayout = itemView.findViewById(R.id.simmerEffact)
 
     }
 
@@ -39,6 +41,7 @@ class My_Adpter(val context: Context?, val list: List<ArticlesItem?>) :
         holder.txt_title.text = list[position]?.title
         holder.txt_title_name.text = list[position]?.source!!.name
 
+//        holder.layout.stopShimmerAnimation()
 
     }
 

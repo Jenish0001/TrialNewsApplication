@@ -55,12 +55,20 @@ class LogInScreen : AppCompatActivity() {
             startActivity(i)
 
             finish()
+
+
         }
+
             .addOnFailureListener { error ->
                 Log.e("TAG", "normalsign: ${error.message}")
+
                 Toast.makeText(this, "enter correct password", Toast.LENGTH_SHORT).show()
+
             }
+
 
     }
 
+
 }
+

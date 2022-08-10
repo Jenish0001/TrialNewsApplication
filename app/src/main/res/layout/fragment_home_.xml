@@ -15,7 +15,7 @@
             android:id="@+id/rv1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#3F51B5">
+            android:background="#120E43">
 
             <ImageView
                 android:id="@+id/categary_Img"
@@ -41,14 +41,14 @@
                 />
 
             <TextView
-                android:layout_marginStart="20dp"
-                android:layout_centerVertical="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignRight="@id/categary_Img"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
                 android:text="NEWS "
-                android:textSize="20dp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="20dp" />
         </RelativeLayout>
 
         <com.google.android.material.tabs.TabLayout
@@ -56,20 +56,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/rv1"
-            app:tabSelectedTextColor="@color/white"
-            android:background="#3F51B5"
-            app:tabMode="scrollable"
-            app:tabTextColor="#B4B5B6"
+            android:background="#120E43"
             app:tabIndicatorColor="@color/white"
-            />
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#B4B5B6" />
 
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager_view"
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tab_view"
+
 
             />
 

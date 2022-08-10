@@ -23,7 +23,6 @@
                 android:clickable="true"
                 android:padding="5dp"
                 app:cardCornerRadius="10dp"
-
                 app:cardUseCompatPadding="true">
 
                 <TextView

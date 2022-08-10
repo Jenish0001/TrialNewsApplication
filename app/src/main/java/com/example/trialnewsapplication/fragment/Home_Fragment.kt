@@ -25,7 +25,9 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
     lateinit var pager_view: ViewPager
     lateinit var serch_Img: ImageView
     lateinit var categary_Img: ImageView
+
     var list = listOf<ArticlesItem>()
+
     var contryname = arrayOf(
         "ar",
         "gr",
@@ -106,7 +108,9 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
+
         var view = inflater.inflate(R.layout.fragment_home_, container, false)
         tab_view = view.findViewById<TabLayout>(R.id.tab_view)
         pager_view = view.findViewById<ViewPager>(R.id.pager_view)
@@ -114,9 +118,11 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
         serch_Img = view.findViewById<ImageView>(R.id.serch_Img)
 
         tabview()
+
         categary_Img.setOnClickListener {
 
             dialogCategary()
+
         }
 
         return view
@@ -195,14 +201,17 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
     }
 
     override fun onResume() {
+
         Handler().postDelayed(Runnable {
             var adpter = TabView_Adpter(mainActivity, mainActivity.supportFragmentManager)
             pager_view.adapter = adpter
         }, 1000)
         super.onResume()
+
     }
 
 }
+
 
 //  second key API       4f45340b45244521ac650281cb817bbe
 // FIrst  key API        9e41272f5ec1439c9a0692b57ca606ba

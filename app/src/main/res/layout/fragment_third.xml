@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#fff"
     tools:context=".fragment.ThirdFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/rv1"
@@ -23,7 +23,7 @@
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="#ffffff"
                 app:cardCornerRadius="150dp"
                 app:cardElevation="10dp">
 
@@ -31,7 +31,8 @@
                     android:id="@+id/img_Cv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:tint="@color/black" />
 
 
             </androidx.cardview.widget.CardView>
@@ -43,6 +44,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="User name"
+                android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="bold"
 
@@ -110,35 +112,39 @@
 
                 />
 
-
-            <TextView
-                android:id="@+id/aboutText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_below="@id/email"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:text="About :"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20dp"
+                >
 
-                />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+
+                    >
 
 
-            <TextView
-                android:id="@+id/logoutTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/aboutText"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:text="Log Out"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold"
+                    <TextView
+                        android:id="@+id/logoutTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/sarif"
+                        android:gravity="center"
+                        android:text="Log Out"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
 
-                />
+                        />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
         </RelativeLayout>
 
@@ -154,7 +160,9 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:backgroundTint="@color/black"
-                android:text="hi" />
+                android:text="hi"
+
+                />
 
         </RelativeLayout>
 

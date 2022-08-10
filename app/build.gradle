@@ -68,6 +68,8 @@ dependencies {
 // face book dep
     implementation 'com.facebook.android:facebook-login:latest.release'
 
+//    shimmer effact
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
 
 }
 apply plugin: 'com.google.gms.google-services'

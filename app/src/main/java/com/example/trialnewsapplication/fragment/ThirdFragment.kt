@@ -32,7 +32,9 @@ class ThirdFragment(val mainActivity: MainActivity) : Fragment() {
     //     Log out user=======
     private fun logout() {
 
+
         logoutTextView.setOnClickListener {
+
 
             var firebaseAuth = FirebaseAuth.getInstance()
             firebaseAuth.signOut()
@@ -43,6 +45,5 @@ class ThirdFragment(val mainActivity: MainActivity) : Fragment() {
         }
 
     }
-
 
 }
