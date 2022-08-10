@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:id="@+id/simmerEffact"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:id="@+id/simmerEffact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,17 +39,17 @@
             android:layout_below="@id/txt_title"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
-            app:cardElevation="10dp"
-            app:cardUseCompatPadding="true"
             app:cardCornerRadius="5dp"
-            >
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
 
             <ImageView
                 android:id="@+id/img_newscv"
                 android:layout_width="match_parent"
                 android:layout_height="190dp"
                 android:layout_below="@id/txt_title"
-                android:src="@drawable/simaereffact" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
 
 
         </androidx.cardview.widget.CardView>
@@ -62,8 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/img_news"
             android:layout_marginTop="10dp"
-            android:text="MISHAL"
             android:lines="4"
+            android:text="MISHAL"
             android:textColor="@color/black"
             android:textSize="15dp" />
 
