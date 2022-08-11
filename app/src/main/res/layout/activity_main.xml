@@ -22,16 +22,15 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
 
         android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
+        android:background="#120E43"
         android:isScrollContainer="true"
         app:itemIconSize="22dp"
         app:labelVisibilityMode="selected"
-        app:menu="@menu/bottom_nav_menu"
-        android:background="#120E43"
-        />
+        app:menu="@menu/bottom_nav_menu" />
 
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
+    android:background="#120E43"
     tools:context=".activity.Show_Activity">
 
     <RelativeLayout
@@ -30,8 +30,8 @@
             android:layout_below="@id/showNameTxt"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="10dp"
-            app:cardUseCompatPadding="true"
             app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
 
             >
 
@@ -48,8 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/showCvView"
-            android:padding="10dp"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:text="Title"
             android:textColor="@color/white"
             android:textSize="20dp"
@@ -82,18 +82,18 @@
             android:textSize="17dp"
 
             />
+
         <TextView
             android:id="@+id/showAuthorName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/showDesciTxt"
             android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/showName"
             android:padding="10dp"
             android:text="hi"
-            android:layout_toEndOf="@id/showName"
             android:textColor="@color/white"
-            android:textSize="17dp"
-            />
+            android:textSize="17dp" />
 
 
         <TextView
@@ -108,18 +108,18 @@
             android:textSize="17dp"
 
             />
+
         <TextView
             android:id="@+id/showContectNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/showName"
             android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/showName"
             android:padding="10dp"
             android:text="hi"
-            android:layout_toEndOf="@id/showName"
             android:textColor="@color/white"
-            android:textSize="17dp"
-            />
+            android:textSize="17dp" />
 
     </RelativeLayout>
 
