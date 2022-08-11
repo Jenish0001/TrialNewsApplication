@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#120E43"
     tools:context=".fragment.ThirdFragment">
 
     <RelativeLayout
@@ -44,7 +44,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="User name"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
 
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Name :"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
 
@@ -78,7 +78,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_toEndOf="@id/name"
                 android:text="username"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
 
                 />
@@ -92,7 +92,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:text="Email :"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
 
@@ -107,7 +107,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@id/email"
                 android:text="email"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
 
                 />
