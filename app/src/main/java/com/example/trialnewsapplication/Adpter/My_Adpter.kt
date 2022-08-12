@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide
 import com.example.trialnewsapplication.R
 import com.example.trialnewsapplication.fragment.Home_Fragment
 import com.example.trialnewsapplication.view.ArticlesItem
-import io.supercharge.shimmerlayout.ShimmerLayout
 
 class My_Adpter(val context: Context?, val list: List<ArticlesItem?>) :
     RecyclerView.Adapter<My_Adpter.ViewData>() {

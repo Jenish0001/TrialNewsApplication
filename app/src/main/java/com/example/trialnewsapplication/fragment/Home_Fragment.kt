@@ -166,7 +166,7 @@ class Home_Fragment(val mainActivity: MainActivity) : Fragment() {
         tab_view.addTab(tab_view.newTab().setText("sport"))
         tab_view.addTab(tab_view.newTab().setText("technology"))
         tab_view.addTab(tab_view.newTab().setText("health"))
-//        tab_view.addTab(tab_view.newTab().setText("technology"))
+        tab_view.addTab(tab_view.newTab().setText("entertainment"))
 //        tab_view.addTab(tab_view.newTab().setText("Bitcoin"))
 
         tab()

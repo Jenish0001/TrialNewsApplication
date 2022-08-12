@@ -23,9 +23,13 @@ class MainActivity : AppCompatActivity() {
         flFragment = findViewById<FrameLayout>(R.id.flFragment)
         bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
+
+
         val firstFragment = Home_Fragment(this)
         val secondFragment = Second_Fragment(this)
         val thirdFragment = ThirdFragment(this)
+
+
 
         setCurrentFragment(firstFragment)
 
@@ -39,8 +43,12 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+
     }
 
+
+//
     fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragment, fragment)

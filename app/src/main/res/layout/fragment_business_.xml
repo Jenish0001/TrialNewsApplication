@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
     tools:context=".tabFragmant.Business_Fragment">
 
 
@@ -43,13 +42,26 @@
             android:layout_below="@id/firstrv">
 
             <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
                 android:id="@+id/RvView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 />
 
         </RelativeLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmmer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:background="@color/black"/>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
 
     </RelativeLayout>
 

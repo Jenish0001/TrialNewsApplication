@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapplication.util.StsticFile.Companion.country
@@ -16,15 +15,13 @@ import com.example.trialnewsapplication.view.ApiClient
 import com.example.trialnewsapplication.view.ApiInterface
 import com.example.trialnewsapplication.view.ArticlesItem
 import com.example.trialnewsapplication.view.Newsmodel
-import com.facebook.shimmer.ShimmerFrameLayout
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Business_Fragment(val homeFragment: MainActivity) : Fragment() {
+class Entertainment_Fragment(val homeFragment: MainActivity) : Fragment() {
 
     lateinit var RvView: RecyclerView
-    lateinit var shimmmer1: ShimmerFrameLayout
     var list = listOf<ArticlesItem?>()
 
 
@@ -36,9 +33,8 @@ class Business_Fragment(val homeFragment: MainActivity) : Fragment() {
         var view = inflater.inflate(R.layout.fragment_business_, container, false)
 
         RvView = view!!.findViewById<RecyclerView>(R.id.RvView)
-        shimmmer1 = view!!.findViewById<ShimmerFrameLayout>(R.id.shimmmer1)
 
-        getNews(country, "business")
+        getNews(country, "entertainment")
         rvSetUp()
         return view
 
@@ -52,11 +48,8 @@ class Business_Fragment(val homeFragment: MainActivity) : Fragment() {
                 override fun onResponse(call: Call<Newsmodel>, response: Response<Newsmodel>) {
                     var newsModel = response.body()
                     list = newsModel?.articles!!
-                    shimmmer1.isVisible = false
-                    RvView.isVisible = true
 
 //                    Log.e("TAG", "onResponse: ${response.body()}")
-
                     rvSetUp()
                 }
 

@@ -38,7 +38,7 @@ class Second_Fragment(val mainActivity: MainActivity) : Fragment() {
 
     fun google_getNews() {
         var apiInterface = ApiClient.getretrofit().create(ApiInterface::class.java)
-        apiInterface.googlegetretrofit("science", "9e41272f5ec1439c9a0692b57ca606ba")
+        apiInterface.googlegetretrofit("entertainment", "9e41272f5ec1439c9a0692b57ca606ba")
 
             .enqueue(object : Callback<GoogleNews> {
 

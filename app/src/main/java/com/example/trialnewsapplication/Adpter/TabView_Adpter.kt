@@ -9,7 +9,7 @@ import com.example.trialnewsapplication.tabFragmant.*
 class TabView_Adpter(val homeFragment: MainActivity, supportFragmentManager: FragmentManager) :
     FragmentPagerAdapter(supportFragmentManager) {
     override fun getCount(): Int {
-        return 5
+        return 6
     }
 
     override fun getItem(position: Int): Fragment {
@@ -22,8 +22,9 @@ class TabView_Adpter(val homeFragment: MainActivity, supportFragmentManager: Fra
             2 -> sport_Fragment(homeFragment)
 
             3 -> Tecnology_Fragment(homeFragment)
+            4 -> Health_Fragment(homeFragment)
 
-            else -> Health_Fragment(homeFragment)
+            else -> Entertainment_Fragment(homeFragment)
 
 
         }

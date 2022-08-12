@@ -40,7 +40,7 @@ class My_Adpter_Google_Api(val my_activity: MainActivity, val list: List<Article
 
         holder.rv1_view.setOnClickListener {
 
-            Toast.makeText(my_activity, "${list[position]?.title}", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(my_activity, "${list[position]?.title}", Toast.LENGTH_SHORT).show()
 
             var title=list[position]?.title
             var description=list[position]?.description

@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MISHAL"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="23dp"
             android:textStyle="bold" />
 
@@ -27,7 +27,7 @@
             android:layout_below="@id/txt_title_name"
             android:layout_marginTop="10dp"
             android:text="MISHAL"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20dp"
 
             />
@@ -62,7 +62,7 @@
             android:layout_marginTop="10dp"
             android:lines="4"
             android:text="MISHAL"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="15dp" />
 
         <View

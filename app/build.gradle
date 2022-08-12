@@ -22,7 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    
+
     buildFeatures {
         viewBinding true
     }
@@ -49,7 +49,7 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.6.1'
 
-    
+
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 //    glide image
@@ -69,7 +69,10 @@ dependencies {
     implementation 'com.facebook.android:facebook-login:latest.release'
 
 //    shimmer effact
-    implementation 'io.supercharge:shimmerlayout:2.1.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+
+//    bottom navigation custom========
 
 }
 apply plugin: 'com.google.gms.google-services'

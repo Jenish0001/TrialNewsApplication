@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
     tools:context=".fragment.Second_Fragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <RelativeLayout
             android:id="@+id/rv1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#212121">
+            android:background="#120E43">
 
 
             <TextView
@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/rv1"
+            android:background="#323786"
 
             />
 

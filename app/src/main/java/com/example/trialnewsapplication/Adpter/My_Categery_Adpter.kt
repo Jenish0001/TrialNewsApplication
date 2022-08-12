@@ -50,9 +50,10 @@ var list1 = arrayListOf<Int>(
 
 class My_Categery_Adpter(
     //    val categery: Array<String>,
-    val  mainActivity: MainActivity,
+    val mainActivity: MainActivity,
     var contryname: Array<String>,
 ) : RecyclerView.Adapter<My_Categery_Adpter.ViewData>() {
+
     class ViewData(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var textcardview = itemView.findViewById<TextView>(R.id.textcardview)
         var cv1 = itemView.findViewById<CardView>(R.id.cv1)
