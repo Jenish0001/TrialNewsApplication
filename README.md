@@ -1,4 +1,11 @@
-# TrialNewsApplication![photo_2022-09-19_20-45-34](https://user-images.githubusercontent.com/101552010/191053219-34d8b0d0-c3af-40f5-9762-8804de9a5ad8.jpg)
-![photo_2022-09-19_20-45-36](https://user-images.githubusercontent.com/101552010/191053224-3706de49-3396-4cc7-b295-729649cdce5a.jpg)
-![photo_2022-09-19_20-45-32](https://user-images.githubusercontent.com/101552010/191053226-38ee9030-a393-4a13-8212-4bde8e08468d.jpg)
-![photo_2022-09-19_20-45-33](https://user-images.githubusercontent.com/101552010/191053230-ecc32be0-b575-461f-a2c5-7463011ed31b.jpg)
+# TrialNewsApplication 
+
+- using sqil Database 
+- multiple 
+
+<p float="center"> 
+<img src="https://user-images.githubusercontent.com/101552010/192108185-c18bad74-bcbe-4d65-8bad-812e610f9a7a.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101552010/192108181-e94bec28-79da-432a-9e5b-d5da5636879c.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101552010/192108186-34b40f84-fe1b-4bdf-aaf0-1e7e0f88b026.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101552010/192108187-2979182c-b814-4466-a719-3c5f585eb5da.png" width=22% height=35%>
+</p> 
